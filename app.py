@@ -80,7 +80,7 @@ ROUTINES = {
 def save_to_google_sheets(data_list):
     try:
         # Live Google Apps Script Deployment URL for her sheet
-       WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzF60a2oppl0zYXcKtzKp9wKp2htJyD_XrwQ9grjXjo3EByn1NglQWTu77CZISx4t7iOw/exec"
+        WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxF60a2oppl0zYXcKtzKp9wKp2htJyD_XrwQ9grjXjo3EByn1NglQWTu77CZISx4t7iOw/exec"
         
         response = requests.post(WEB_APP_URL, json=data_list)
         if response.status_code == 200 and response.json().get("status") == "success":
